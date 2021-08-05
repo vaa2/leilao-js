@@ -1,0 +1,25 @@
+{
+  "name": "leilao",
+  "version": "1.0.0",
+  "description": "Sistema de leilão em JavaScript com Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaa2/leilao-js.git"
+  },
+  "keywords": [
+    "leilao"
+  ],
+  "author": "Vivian",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vaa2/leilao-js/issues"
+  },
+  "homepage": "https://github.com/vaa2/leilao-js#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
