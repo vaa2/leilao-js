@@ -5,6 +5,7 @@ module.exports = class Leilao{
         this.descricao = desc;
         this.lances = [];
         this.maiorLance = new Lance('Nenhum', 0);
+        this.menorLance = new Lance('Nenhum', 0);
     }
 
     getDescricao(){
@@ -19,6 +20,10 @@ module.exports = class Leilao{
         return this.maiorLance;
     }
 
+    getMenorLance(){
+        return this.menorLance;
+    }
+
     propoe(lance){
         this.lances.push(lance);
     }
@@ -28,6 +33,10 @@ module.exports = class Leilao{
             (lance) => {
                 if(lance.getValor() > this.maiorLance.getValor()){
                     this.maiorLance = lance;
+                }
+
+                else if(lance.getValor() < this.maiorLance.getValor()){
+                    this.menorLance = lance;
                 }
             }
         );
