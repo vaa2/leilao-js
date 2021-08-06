@@ -10,7 +10,7 @@ test('Pega maior lance aleatório',
 
         leilao.avalia();
         expect(leilao.getMaiorLance().getValor()).toBe(200.0);
-        expect(leilao.getMaiorLance().getNome()).toBe('Maria');
+        expect(leilao.getMaiorLance().getNome()).toBe('Laura');
     }
 
 );
@@ -24,7 +24,7 @@ test('Pega maior lance ordem crescente',
 
         leilao.avalia();
         expect(leilao.getMaiorLance().getValor()).toBe(200.0);
-        expect(leilao.getMaiorLance().getNome()).toBe('Maria');
+        expect(leilao.getMaiorLance().getNome()).toBe('Laura');
     }
 
 );
@@ -38,7 +38,7 @@ test('Pega maior lance ordem decrescente',
 
         leilao.avalia();
         expect(leilao.getMaiorLance().getValor()).toBe(200.0);
-        expect(leilao.getMaiorLance().getNome()).toBe('Maria');
+        expect(leilao.getMaiorLance().getNome()).toBe('Laura');
     }
 
 );
